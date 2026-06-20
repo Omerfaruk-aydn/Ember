@@ -27,8 +27,13 @@ class Settings(BaseSettings):
     S3_BUCKET_NAME: str = "motion-clone-assets"
 
     ANTHROPIC_API_KEY: str = ""
+    OPENAI_API_KEY: str = ""
+    ELEVENLABS_API_KEY: str = ""
+    REPLICATE_API_TOKEN: str = ""
     STRIPE_SECRET_KEY: str = ""
     STRIPE_WEBHOOK_SECRET: str = ""
+    STRIPE_PRO_PRICE_ID: str = ""
+    STRIPE_ENTERPRISE_PRICE_ID: str = ""
 
     CORS_ORIGINS: list[str] = ["http://localhost:5173", "http://localhost:3000"]
 

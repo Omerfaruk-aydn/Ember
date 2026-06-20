@@ -1,0 +1,62 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "back": "Back",
+    "done": "Done",
+    "close": "Close"
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "brands": "Brands",
+    "settings": "Settings",
+    "billing": "Billing",
+    "logout": "Logout"
+  },
+  "projects": {
+    "title": "My Projects",
+    "create": "New Project",
+    "empty": "No projects yet",
+    "emptyDescription": "Create your first video project",
+    "status": { "draft": "Draft", "generating": "Generating", "ready": "Ready", "failed": "Failed" }
+  },
+  "editor": {
+    "title": "Video Editor",
+    "scenes": "Scenes",
+    "assets": "Assets",
+    "effects": "Effects",
+    "audio": "Audio",
+    "brand": "Brand",
+    "preview": "Preview",
+    "export": "Export Video"
+  },
+  "generation": {
+    "title": "Generate Video",
+    "prompt": "Describe your video",
+    "style": "Style",
+    "duration": "Duration",
+    "aspectRatio": "Aspect Ratio",
+    "generate": "Generate Video",
+    "progress": "Generating..."
+  },
+  "billing": {
+    "title": "Billing",
+    "plan": "Current Plan",
+    "usage": "Usage",
+    "upgrade": "Upgrade",
+    "invoices": "Invoices"
+  },
+  "plans": {
+    "free": { "name": "Free", "price": "$0", "period": "/month" },
+    "pro": { "name": "Pro", "price": "$29", "period": "/month" },
+    "enterprise": { "name": "Enterprise", "price": "$199", "period": "/month" }
+  }
+}

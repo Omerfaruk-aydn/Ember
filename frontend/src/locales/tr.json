@@ -1,0 +1,62 @@
+{
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "success": "Başarılı",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "create": "Oluştur",
+    "search": "Ara",
+    "back": "Geri",
+    "done": "Tamam",
+    "close": "Kapat"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "projects": "Projeler",
+    "brands": "Markalar",
+    "settings": "Ayarlar",
+    "billing": "Faturalandırma",
+    "logout": "Çıkış"
+  },
+  "projects": {
+    "title": "Projelerim",
+    "create": "Yeni Proje",
+    "empty": "Henüz proje yok",
+    "emptyDescription": "İlk video projenizi oluşturun",
+    "status": { "draft": "Taslak", "generating": "Üretiliyor", "ready": "Hazır", "failed": "Başarısız" }
+  },
+  "editor": {
+    "title": "Video Düzenleyici",
+    "scenes": "Sahneler",
+    "assets": "Varlıklar",
+    "effects": "Efektler",
+    "audio": "Ses",
+    "brand": "Marka",
+    "preview": "Önizleme",
+    "export": "Video Dışa Aktar"
+  },
+  "generation": {
+    "title": "Video Üret",
+    "prompt": "Videonuzu açıklayın",
+    "style": "Stil",
+    "duration": "Süre",
+    "aspectRatio": "En Boy Oranı",
+    "generate": "Video Üret",
+    "progress": "Üretiliyor..."
+  },
+  "billing": {
+    "title": "Faturalandırma",
+    "plan": "Mevcut Plan",
+    "usage": "Kullanım",
+    "upgrade": "Yükselt",
+    "invoices": "Faturalar"
+  },
+  "plans": {
+    "free": { "name": "Ücretsiz", "price": "₺0", "period": "/ay" },
+    "pro": { "name": "Pro", "price": "₺899", "period": "/ay" },
+    "enterprise": { "name": "Kurumsal", "price": "₺5999", "period": "/ay" }
+  }
+}

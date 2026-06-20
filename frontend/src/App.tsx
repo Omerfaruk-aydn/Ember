@@ -9,13 +9,15 @@ import DashboardPage from "@/pages/DashboardPage"
 import ProjectsPage from "@/pages/ProjectsPage"
 import NewProjectPage from "@/pages/NewProjectPage"
 import EditorPage from "@/pages/EditorPage"
+import BillingPage from "@/pages/BillingPage"
+import BrandsPage from "@/pages/BrandsPage"
+import SettingsPage from "@/pages/SettingsPage"
+import NotFoundPage from "@/pages/NotFoundPage"
+import "@/i18n"
 
 const queryClient = new QueryClient({
   defaultOptions: {
-    queries: {
-      staleTime: 5 * 60 * 1000,
-      retry: 1,
-    },
+    queries: { staleTime: 5 * 60 * 1000, retry: 1 },
   },
 })
 
@@ -34,9 +36,12 @@ function AppContent() {
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/new" element={<NewProjectPage />} />
+        <Route path="/billing" element={<BillingPage />} />
+        <Route path="/brands" element={<BrandsPage />} />
+        <Route path="/settings" element={<SettingsPage />} />
       </Route>
       <Route path="/editor/:projectId" element={<EditorPage />} />
-      <Route path="*" element={<Navigate to="/dashboard" replace />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   )
 }

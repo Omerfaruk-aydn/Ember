@@ -1,12 +1,15 @@
 import { Link, useLocation } from "react-router-dom"
 import { cn } from "@/lib/utils"
 import { useAuthStore } from "@/stores/authStore"
-import { Film, LayoutDashboard, FolderOpen, LogOut } from "lucide-react"
+import { Film, LayoutDashboard, FolderOpen, CreditCard, Globe, Settings, LogOut } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/projects", label: "Projects", icon: FolderOpen },
+  { href: "/brands", label: "Brands", icon: Globe },
+  { href: "/billing", label: "Billing", icon: CreditCard },
+  { href: "/settings", label: "Settings", icon: Settings },
 ]
 
 export function Sidebar() {
