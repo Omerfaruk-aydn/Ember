@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.v1.router import api_router
+from app.api.websocket.editor import router as ws_router
 from app.config import get_settings
 from app.core.middleware import RequestIDMiddleware
 
@@ -34,6 +35,7 @@ app.add_middleware(
 app.add_middleware(RequestIDMiddleware)
 
 app.include_router(api_router, prefix=settings.API_V1_PREFIX)
+app.include_router(ws_router)
 
 
 @app.get("/health")
