@@ -10,7 +10,7 @@ asset_service = AssetService()
 
 @router.get("")
 async def list_assets(asset_type: str | None = None, current_user: User = Depends(get_current_active_user)):
-    assets = await asset_service.list(current_user.id, asset_type)
+    assets = await asset_service.list_assets(current_user.id, asset_type)
     return [{"id": str(a.id), "name": a.name, "type": a.type, "cdn_url": a.cdn_url, "mime_type": a.mime_type, "file_size_bytes": a.file_size_bytes, "created_at": a.created_at.isoformat()} for a in assets]
 
 

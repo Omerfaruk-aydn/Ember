@@ -13,7 +13,7 @@ brand_service = BrandService()
 
 @router.get("")
 async def list_brands(current_user: User = Depends(get_current_active_user)):
-    brands = await brand_service.list(current_user.id)
+    brands = await brand_service.list_brands(current_user.id)
     return [{"id": str(b.id), "name": b.name, "website_url": b.website_url, "primary_colors": b.primary_colors, "status": b.status, "created_at": b.created_at.isoformat()} for b in brands]
 
 

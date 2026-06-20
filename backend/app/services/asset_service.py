@@ -8,7 +8,7 @@ from app.db.session import async_session_factory
 
 
 class AssetService:
-    async def list(self, user_id: uuid.UUID, asset_type: str | None = None) -> list[Asset]:
+    async def list_assets(self, user_id: uuid.UUID, asset_type: str | None = None) -> list[Asset]:
         async with async_session_factory() as db:
             query = select(Asset).where(Asset.user_id == user_id, Asset.deleted_at.is_(None))
             if asset_type:
